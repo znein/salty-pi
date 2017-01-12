@@ -2,7 +2,7 @@
 /home/testacct/recordings:
   file.directory:
     - user: testacct
-    - group: testacctu
+    - group: testacct
     - mode: 755
     - makedirs: True 
 
