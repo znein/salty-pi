@@ -13,7 +13,7 @@
     - user: root
     - minute: 30
     - hour: 23
-    - indentifier: 2330picam-mv-avi-jpg-recordings
+    - identifier: 2330picam-mv-avi-jpg-recordings
 # Move anything recorded after the big move
 2359picam-mv-avi-jpg-recordings:
   cron.present:
@@ -21,4 +21,4 @@
     - user: root
     - minute: 59
     - hour: 23
-    - indentifier: 2359picam-mv-avi-jpg-recordings
+    - identifier: 2359picam-mv-avi-jpg-recordings
