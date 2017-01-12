@@ -17,3 +17,4 @@ motion_dependencies:
 include:
   - .motion
   - .config
+  - .initd

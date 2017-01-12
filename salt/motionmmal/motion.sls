@@ -15,9 +15,9 @@
     - mode: 644
 
 # Service
-#motion_service:
-#  service.running:
-#    - name: motion
-#    - enable: True
-#    - watch:
-#      - file: /usr/bin/motion
+motion_service:
+  service.running:
+    - name: motion
+    - enable: True
+    - watch:
+      - file: /usr/bin/motion
