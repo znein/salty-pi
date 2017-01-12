@@ -1,0 +1,17 @@
+#!/bin/bash
+## script to move files by day - run every night at 23:30 and 23:59
+# vars
+date=$(date +%Y%m%d)
+recordings=/home/testacct/recordings
+
+# find files and do things
+if [ -d $recordings/$date ]
+	then 
+		cd $recordings
+		ls *.avi | grep $date | while read file; do mv $file $date/; done
+		ls *.jpg | grep $date | while read file; do mv $file $date/jpg/; done
+	else 
+		cd $recordings; mkdir $date; mkdir $date/jpg
+		ls *.avi | grep $date | while read file; do mv $file $date/; done
+		ls *.jpg | grep $date | while read file; do mv $file $date/jpg/; done
+fi

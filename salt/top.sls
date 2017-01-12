@@ -15,3 +15,4 @@ base:
   'G@roles:picam':
     - match: compound
     - motionmmal
+    - picam
