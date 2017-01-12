@@ -17,7 +17,7 @@
 # Daytime Config
 #/etc/motion.day:
 #  file.managed:
-#    - source: salt://motionmmal/files/etc/motion.day
+#    - source: salt://motionmmal/files/etc/motion.day.old
 #    - user: root
 #    - group: root
 #    - mode: 644
@@ -25,7 +25,7 @@
 # Nighttime Config
 #/etc/motion.night:
 #  file.managed:
-#    - source: salt://motionmmal/files/etc/motion.night
+#    - source: salt://motionmmal/files/etc/motion.night.old
 #    - user: root
 #    - group: root
 #    - mode: 644
